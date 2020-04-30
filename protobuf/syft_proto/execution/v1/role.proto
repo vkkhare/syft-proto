@@ -18,4 +18,5 @@ message Role {
     repeated syft_proto.types.syft.v1.Id output_placeholder_ids = 6;
     repeated string tags = 7;
     string description = 8;
+    map<string, repeated syft_proto.execution.v1.ComputationAction> operations = 9;
 }
